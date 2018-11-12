@@ -9,6 +9,8 @@
 </head>
 <body>
 	<div id="app">
+		<h1>Associação bi-lateral</h1>
+		<p>recebendo dados do input</p>
 		<header class="header">
 
 			
@@ -16,17 +18,8 @@
 		</header>
 		<section class="container">
 			<section class="container__content">
-				<div id="app">
-					{{ frase }}
-		
-				</div>
-
-				<br>
-
-				<div id="teste" v-text="frase">
-		
-		
-				</div>
+				<input type="text" v-model="texto">
+				{{ texto }}
 
 				
 
@@ -39,7 +32,7 @@
 		</section>
 		<footer class="footer">
 
-			
+			<a href="../index.html">home</a>
 
 		</footer>
 	</div>
