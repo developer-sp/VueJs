@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loop for | Vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+</head>
+<body>
+	<div id="lista">
+		<h2>Percorrendo arrays com v-for</h2>
+		
+
+		<ul>
+			<li v-for="info in nomes">
+				{{ info.nome+" "+info.sobrenome+" "+info.idade+" anos."}}
+			</li>
+		</ul>
+		
+	</div>
+
+	<br><br>
+	<p>É possivel alterar o array, abrindo o console e digitando... =><br>
+		lista.nomes = [ <br>{nome:'Paulo', sobrenome:'Matos', idade:99}, <br>{nome:'Rafael', sobrenome:'Mendes', idade:10}, <br>{nome:'Juliana', sobrenome:'Lopes', idade:20}, <br>{nome:'Luciana', sobrenome:'Lima', idade:30}, <br>]
+	</p>
+
+	<footer class="footer">
+
+		<a href="../index.html">home</a>
+	</footer>
+
+	
+	
+
+
+
+
+	<script src="script.js"></script>
+		
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Associação bi-lateral</title>
+	<title>VueJs</title>
 	<meta charset="utf-8" />
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div id="app">
-		<h1>Associação bi-lateral</h1>
-		<p>recebendo dados do input</p>
+		
+		<p>Validação da soma de números aleatórios usando a condicional if</p>
 		<header class="header">
 
 			
@@ -18,8 +18,10 @@
 		</header>
 		<section class="container">
 			<section class="container__content">
-				<input type="text" v-model="texto">
-				{{ texto }}
+				<span>{{n1}} + {{n2}} =</span>
+				<input type="text" v-model="n3" />
+				<div v-if="n1 + n2 == parseInt(n3)">Acertou!</div>
+				<div v-if="n3 != '0' && n1 + n2 != parseInt(n3)">Errou!</div>
 
 				
 
